@@ -21,12 +21,15 @@
 // Font families
 // -----------------------------------------------------------------------------
 
-$fontFamily-sans:               stencilFontFamily("body-font"), Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+$fontFamily-sans:               stencilFontFamily("body-font"), "Jost", serif;
 $fontFamily-serif:              null;
 $fontFamily-mono:               null;
-$fontFamily-headings:           stencilFontFamily("headings-font"), Arial, Helvetica, sans-serif;
+$fontFamily-headings:           stencilFontFamily("headings-font"), "Playfair Display", serif;
 
-$fontFamily-hero:               stencilFontFamily("headings-font"), Arial, Helvetica, sans-serif;
+$fontFamily-hero:               stencilFontFamily("headings-font"), "Playfair Display", serif;
 
 
 // Font sizes
