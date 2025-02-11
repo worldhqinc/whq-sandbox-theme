@@ -437,5 +437,6 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(stencilColor("
 }
 
 .checkoutHeader-link {
-    font-family: stencilFontFamily("headings-font"), "Playfair Display", serif;;
+    font-family: stencilFontFamily("headings-font"), "Playfair Display", serif;
+    font-weight: 600;
 }
