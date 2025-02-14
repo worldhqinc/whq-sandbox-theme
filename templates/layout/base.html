@@ -25,9 +25,9 @@
             window.lazySizesConfig.loadMode = 1;
         </script>
         <script nonce="{{nonce}}" async src="{{cdn 'assets/dist/theme-bundle.head_async.js' resourceHint='preload' as='script'}}"></script>
-        
+
         {{getFontsCollection font-display='block'}}
-        
+
         <script nonce="{{nonce}}" async src="{{cdn 'assets/dist/theme-bundle.font.js' resourceHint='preload' as='script'}}"></script>
 
         {{{stylesheet '/assets/css/theme.css'}}}
@@ -49,6 +49,12 @@
         {{~inject 'carouselContentAnnounceMessage' (lang 'carousel.content_announce_message')}}
         {{~inject 'giftWrappingRemoveMessage' (lang 'cart.gift_wrapping.remove_confirm')}}
     </head>
+    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+    <script>
+        Weglot.initialize({
+            api_key: 'wg_0d5286bf6b6db4c2d222633008fdeab98'
+        });
+    </script>
     <body>
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
 
@@ -63,7 +69,7 @@
                 window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
 
                 function browserSupportsFormData() {
-                    return typeof FormData !== 'undefined' 
+                    return typeof FormData !== 'undefined'
                         && !!FormData.prototype.keys;
                 }
                 function loadFormDataPolyfillScript(src) {
